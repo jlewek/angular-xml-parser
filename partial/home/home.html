@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-md-4">
+		<form ng-submit="phraseXml()">
+		    <span style="color:red">{{errorMessage}}</span>
+		    <h3>Insert xml code:</h3>
+		    <p><textarea class="form-control xmlTextarea" ng-model="userXml">
+
+		    </textarea></p>
+		    <button class="btn">submit</button>
+		</form>
+	</div>
+	<div class="col-md-4">
+	<h3>List result:</h3>
+		<ul ng-repeat=" (key,value) in resolve">
+		    <li><b>{{value.name}}</b> | {{value.size}}</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<h3>Json result:</h3>
+		<span>{{jsonResult}}</span>
+	</div>
+</div>
