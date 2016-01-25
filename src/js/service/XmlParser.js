@@ -92,7 +92,7 @@ angular.module('ex2').service('xmlparserService',function() {
 
 
         // method to create object with name nodes and count subnodes
-        function pushElement(name,valueToCount)
+        var pushElement = function (name,valueToCount)
         {
             if(name=='parsererror' ||name=='body') // if nodes cant be parsed (xml has bad structure) return false
             {
@@ -109,6 +109,19 @@ angular.module('ex2').service('xmlparserService',function() {
             }
         }
 
+        // method using to build list of child
+        var buildListOfChild = function(name,valueToCount){
+            var objectToPush=pushElement(name,valueToCount);
+            if(!objectToPush) // if objcet cant be parsed change value of validete var
+            {
+                parseCorrect=false;
+            }
+            else // if parse was goot push object to array
+            {
+                listOfChild.push(objectToPush);
+            }
+        }
+
         angular.forEach(userObject, function(valueFirst, keyFirst) // iterate first nodes
         {
                 angular.forEach(valueFirst, function(valueSecound, keySecound) // iterate secound nodes
@@ -117,28 +130,11 @@ angular.module('ex2').service('xmlparserService',function() {
                     {
                         angular.forEach(valueSecound, function(valueThrid, keyThrid) // iterate at reoeated elements
                         {
-                            var objectToPush=pushElement(keySecound,valueThrid);
-                            if(!objectToPush) // if objcet cant be parsed change value of validete var
-                            {
-                                parseCorrect=false;
-                            }
-                            else // if parse was goot push object to array
-                            {
-                                listOfChild.push(objectToPush);  
-                            }
+                            buildListOfChild(keySecound,valueThrid);
                         }); 
                     }
                     else {
-                        var objectToPush=pushElement(keySecound,valueSecound);
-
-                        if(!objectToPush)
-                        {
-                            parseCorrect=false;
-                        }
-                        else
-                        {
-                            listOfChild.push(objectToPush);  
-                        }
+                        buildListOfChild(keySecound,valueSecound);
                     }
                 });
             
