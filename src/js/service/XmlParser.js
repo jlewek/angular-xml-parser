@@ -1,7 +1,7 @@
 angular.module('ex2').service('xmlparserService',function() {
 
 
-    this.parseXml=function(xml, arrayTags) //xml to javascript object pharser
+    var parseXml=function(xml, arrayTags) //xml to javascript object pharser
     {
         // create xml DOM object
         var dom = null;
@@ -82,7 +82,7 @@ angular.module('ex2').service('xmlparserService',function() {
     }
 
     // method to create object with list secound nodes, and count all subnodes of them
-    this.generateParseArray=function(userObject)
+    this.generateParseArray=function(userXml)
     {
 
         // define object to return
@@ -90,6 +90,7 @@ angular.module('ex2').service('xmlparserService',function() {
         // defain validate error var
         var parseCorrect=true;
 
+        var userObject=parseXml(userXml);
 
         // method to create object with name nodes and count subnodes
         var pushElement = function (name,valueToCount)

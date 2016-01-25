@@ -7,8 +7,7 @@ angular.module('ex2').controller('HomeCtrl',function($scope, xmlparserService,$i
 	$scope.jsonResult='';	
 
 	// run methods to parse XML and return resolve to user
-    var userObject=xmlparserService.parseXml($scope.userXml);
-    var resolve=xmlparserService.generateParseArray(userObject);
+    var resolve=xmlparserService.generateParseArray($scope.userXml);
     
     if(!resolve) // show message if xml string was bad
     {
