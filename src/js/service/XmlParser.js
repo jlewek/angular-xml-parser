@@ -142,7 +142,7 @@ angular.module('ex2').service('xmlparserService',function() {
         });
 
 
-        return  ( (parseCorrect) ? listOfChild: false);
+        return  ( (parseCorrect) ? listOfChild: null);
 
     }  ;
 
