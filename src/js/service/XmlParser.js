@@ -69,7 +69,7 @@ angular.module('ex2').service('xmlparserService',function() {
                 parseNode(childNodesValue, jsonNode);
             });
             
-        }
+        } ;
 
         var result = {};
         if(dom.childNodes.length)
@@ -79,7 +79,7 @@ angular.module('ex2').service('xmlparserService',function() {
 
         // return object result
         return result;
-    }
+    } ;
 
     // method to create object with list secound nodes, and count all subnodes of them
     this.generateParseArray=function(userXml)
@@ -108,7 +108,7 @@ angular.module('ex2').service('xmlparserService',function() {
 
                 return objectToPush;
             }
-        }
+        } ;
 
         // method using to build list of child
         var buildListOfChild = function(name,valueToCount){
@@ -121,7 +121,7 @@ angular.module('ex2').service('xmlparserService',function() {
             {
                 listOfChild.push(objectToPush);
             }
-        }
+        } ;
 
         angular.forEach(userObject, function(valueFirst, keyFirst) // iterate first nodes
         {
@@ -144,7 +144,7 @@ angular.module('ex2').service('xmlparserService',function() {
 
         return  ( (parseCorrect) ? listOfChild: false);
 
-    }
+    }  ;
 
 
 });

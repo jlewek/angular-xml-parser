@@ -8,7 +8,7 @@
     <file path="/style.css" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453721413900" ignored="false" />
     <file path="/home.html" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453721410573" ignored="false" />
     <file path="/XmlParser.js" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453722239606" ignored="false" />
-    <file path="/HomeCtrl.js" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453713089307" ignored="false" />
+    <file path="/HomeCtrl.js" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453722348385" ignored="false" />
     <file path="/README.md" changelist="d8cf6af9-d061-4198-a374-96fedb36b577" time="1453713236550" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlParser.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="XmlParser.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/service/XmlParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="39" selection-start="2628" selection-end="2628" vertical-scroll-proportion="-23.8">
+            <state line="71" column="11" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.2689352">
               <folding />
             </state>
           </provider>
@@ -115,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/controllers/HomeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="58" selection-start="269" selection-end="273" vertical-scroll-proportion="0.1492865">
+            <state line="24" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="-16.32">
               <folding />
             </state>
           </provider>
@@ -595,16 +595,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/service/XmlParser.js">
+    <entry file="file://$PROJECT_DIR$/src/js/controllers/HomeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="39" selection-start="2628" selection-end="2628" vertical-scroll-proportion="-23.8">
+        <state line="24" column="4" selection-start="760" selection-end="760" vertical-scroll-proportion="-16.32">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers/HomeCtrl.js">
+    <entry file="file://$PROJECT_DIR$/src/js/service/XmlParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="58" selection-start="269" selection-end="273" vertical-scroll-proportion="0.1492865">
+        <state line="71" column="11" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.2689352">
           <folding />
         </state>
       </provider>

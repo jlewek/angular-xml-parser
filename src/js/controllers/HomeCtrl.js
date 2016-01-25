@@ -1,5 +1,8 @@
 angular.module('ex2').controller('HomeCtrl',function($scope, xmlparserService,$interval){
 
+  // declarate resolve object
+  $scope.resolve=new Object();
+
   $scope.phraseXml=function(){
 
   	// clear space with resolve after click button
@@ -19,5 +22,5 @@ angular.module('ex2').controller('HomeCtrl',function($scope, xmlparserService,$i
 	    $scope.resolve=resolve;
 	    $scope.jsonResult= JSON.stringify(resolve);	
     }
-  }
+  };
 });
