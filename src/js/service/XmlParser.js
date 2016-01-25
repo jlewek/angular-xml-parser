@@ -140,14 +140,9 @@ angular.module('ex2').service('xmlparserService',function() {
             
         });
 
-        if(parseCorrect) // if pars fas correct return array
-        {
-            return listOfChild;
-        }
-        else // if pars fas correct return false
-        {
-            return null;
-        }
+
+        return  ( (parseCorrect) ? listOfChild: false);
+
     }
 
 
