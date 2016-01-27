@@ -1,3 +1,5 @@
+Angular Xml Parser v1.0 release
+
 This aplication is create to list and count secound node in XML string.
 
 You must run this app on the domen or virtual host.
